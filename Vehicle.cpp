@@ -17,7 +17,8 @@ Vehicle::~Vehicle()
     std::cout << "Vehicle Destroyed" << std::endl;
 }
 
-bool Vehicle::HasEngine()
-{
-    return true;
-}
+//Converted to pure virtual function
+// bool Vehicle::HasEngine()
+// {
+//     return true;
+// }
