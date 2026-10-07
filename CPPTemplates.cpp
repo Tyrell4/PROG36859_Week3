@@ -41,6 +41,18 @@ void func(T a, G b) {
     //  will cause an issue.
 }
 
+template <class T>
+class Node {
+    T value_;
+public:
+    Node(T value) {//On creation of class object, compiler will create a new class for each new type we give it
+        value_ = value;
+    }
+    void Display() {
+        std::cout << value_ << std::endl;
+    }
+};
+
 void CPPTemplates() {
     int x = 0;
     int y = 0;
@@ -48,4 +60,13 @@ void CPPTemplates() {
     func("hi", "world"); //These are const char*, string literal
     func(x, 'a');//This would call func(int, int) because chars are a number and so it can call that way, however once we 
     //  add the other template with class G as well, it will call that becuase it now recognizes the two types
+
+    Node<int> *node = new Node<int>(10);
+    node->Display();
+
+    Node<int> node2(1000);
+    node2.Display();
+
+    Node<bool> node3(true);
+    node3.Display();
 }
