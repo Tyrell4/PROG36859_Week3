@@ -3,7 +3,7 @@
 #include "Bike.h"
 #include "Truck.h"
 
-class IInterface {
+class IInterface {//With an interface, you MUST inherit this function from the derived class
     virtual void InterfaceFunction() = 0;
 };
 

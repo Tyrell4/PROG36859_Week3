@@ -5,6 +5,12 @@
 // CPPAbstract.cpp
 void CPPAbstract();
 
+//CPPDIamondPattern.cpp
+void CPPDiamondPattern();
+
+//CPPTemplates.cpp
+void CPPTemplates();
+
 // ConstructorDestructorExamples.cpp
 void ConstructorDestructorExamples();
 void CallingConstructors();
@@ -14,7 +20,9 @@ void VectorExamples();
 
 int main()
 {
-    CPPAbstract();
+    CPPTemplates();
+    // CPPDiamondPattern();
+    // CPPAbstract();
 
     // Invoke our Constructor/Destructor example
     //ConstructorDestructorExamples();
